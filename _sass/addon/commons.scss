@@ -1490,8 +1490,10 @@ $btn-mb: 0.5rem;
   }
 
   footer {
-    div.d-felx {
-      width: 85%;
+    div.d-flex {
+      padding: 1.5rem 0;
+      line-height: 1.65;
+      flex-wrap: wrap;
     }
   }
 }
