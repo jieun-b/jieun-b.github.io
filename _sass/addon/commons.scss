@@ -1374,11 +1374,9 @@ $btn-mb: 0.5rem;
   }
 
   footer {
-    p {
-      width: auto;
-      margin: 0 0.75rem;
-      opacity: 0.8;
-      }
+    div.d-felx {
+      width: 85%;
+    }
   }
 
   #sidebar {
