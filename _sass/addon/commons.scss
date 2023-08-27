@@ -1373,8 +1373,13 @@ $btn-mb: 0.5rem;
     min-height: calc(100vh - $footer-height);
   }
 
-  footer > div.d-flex {
-    width: 92%;
+  footer {
+    p {
+      width: auto;
+      margin: 0 0.75rem;
+      opacity: 0.8;
+      }
+    }
   }
 
   #sidebar {
