@@ -173,40 +173,39 @@ kbd {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  padding: 0 1rem;
-  height: $footer-height;
   font-size: 0.8rem;
+  background-color: var(--main-bg);
 
-  > div.d-flex {
+  @extend %text-color;
+
+  div.d-flex {
+    height: $footer-height;
     line-height: 1.2rem;
-    width: 95%;
-    max-width: 1045px;
+    padding-bottom: 1rem;
     border-top: 1px solid var(--main-border-color);
-    margin-bottom: 1rem;
-
-    > div {
-      width: 350px;
-    }
+    flex-wrap: wrap;
   }
 
   a {
-    @extend %text-color;
-
-    &:link {
-      @include no-text-decoration;
-    }
+    @extend %text-highlight;
 
     &:hover {
       @extend %link-hover;
-
-      @include no-text-decoration;
     }
   }
 
-  .footer-right {
-    text-align: right;
+  p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+/* fontawesome icons */
+i {
+  &.far,
+  &.fas {
+    @extend %no-cursor;
   }
 }
 
@@ -745,7 +744,7 @@ $btn-mb: 0.5rem;
 
   .site-title {
     font-weight: 900;
-    font-size: 1.3rem;
+    font-size: 1.75rem;
     line-height: 1.2;
     letter-spacing: 0.25px;
     margin-top: 1.25rem;
@@ -760,7 +759,7 @@ $btn-mb: 0.5rem;
   }
 
   .site-subtitle {
-    font-size: 80%;
+    font-size: 95%;
     color: var(--site-subtitle-color);
     margin-top: 0.25rem;
     word-spacing: 1px;
@@ -1374,10 +1373,17 @@ $btn-mb: 0.5rem;
     min-height: calc(100vh - $footer-height);
   }
 
-  footer p {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 0;
+  footer {
+    p {
+      width: auto;
+      &:last-child {
+        &::before {
+          content: '-';
+          margin: 0 0.75rem;
+          opacity: 0.8;
+        }
+      }
+    }
   }
 
   #sidebar {
@@ -1491,10 +1497,8 @@ $btn-mb: 0.5rem;
   }
 
   footer {
-    div.d-flex {
-      padding: 1.5rem 0;
-      line-height: 1.65;
-      flex-wrap: wrap;
+    div.d-felx {
+      width: 85%;
     }
   }
 }
