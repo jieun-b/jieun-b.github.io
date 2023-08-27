@@ -744,7 +744,7 @@ $btn-mb: 0.5rem;
 
   .site-title {
     font-weight: 900;
-    font-size: 1.75rem;
+    font-size: 1.3rem;
     line-height: 1.2;
     letter-spacing: 0.25px;
     margin-top: 1.25rem;
@@ -759,7 +759,7 @@ $btn-mb: 0.5rem;
   }
 
   .site-subtitle {
-    font-size: 95%;
+    font-size: 80%;
     color: var(--site-subtitle-color);
     margin-top: 0.25rem;
     word-spacing: 1px;
@@ -1378,7 +1378,6 @@ $btn-mb: 0.5rem;
       width: auto;
       &:last-child {
         &::before {
-          content: '-';
           margin: 0 0.75rem;
           opacity: 0.8;
         }
