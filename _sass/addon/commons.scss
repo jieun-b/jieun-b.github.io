@@ -173,39 +173,40 @@ kbd {
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
+  padding: 0 1rem;
+  height: $footer-height;
   font-size: 0.8rem;
-  background-color: var(--main-bg);
 
-  @extend %text-color;
-
-  div.d-flex {
-    height: $footer-height;
+  > div.d-flex {
     line-height: 1.2rem;
-    padding-bottom: 1rem;
+    width: 95%;
+    max-width: 1045px;
     border-top: 1px solid var(--main-border-color);
-    flex-wrap: wrap;
-  }
+    margin-bottom: 1rem;
 
-  a {
-    @extend %text-highlight;
-
-    &:hover {
-      @extend %link-hover;
+    > div {
+      width: 350px;
     }
   }
 
-  p {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 0;
-  }
-}
+  a {
+    @extend %text-color;
 
-/* fontawesome icons */
-i {
-  &.far,
-  &.fas {
-    @extend %no-cursor;
+    &:link {
+      @include no-text-decoration;
+    }
+
+    &:hover {
+      @extend %link-hover;
+
+      @include no-text-decoration;
+    }
+  }
+
+  .footer-right {
+    text-align: right;
   }
 }
 
