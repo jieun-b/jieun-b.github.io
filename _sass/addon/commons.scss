@@ -1373,10 +1373,8 @@ $btn-mb: 0.5rem;
     min-height: calc(100vh - $footer-height);
   }
 
-  footer {
-    p {
-      width: auto;
-    }
+  footer > div.d-flex {
+    width: 92%;
   }
 
   #sidebar {
