@@ -128,6 +128,7 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
+  math_engine: katex
 
 collections:
   tabs:
@@ -145,7 +146,6 @@ defaults:
       # DO NOT modify the following parameter unless you are confident enough
       # to update the code of all other post links in this project.
       permalink: /posts/:title/
-      mathjax: true
   - scope:
       path: _drafts
     values:

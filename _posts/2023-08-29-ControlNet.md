@@ -6,6 +6,8 @@ categories:
 
 date: 2023-08-29 
 tag: [AI, Diffusion, ControlNet]
+
+katex: True
 ---
 
 # Adding Conditional Control to Text-to-Image Diffusion Models
