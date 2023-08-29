@@ -43,7 +43,7 @@ body {
   h#{$i} {
     @extend %heading;
 
-    @if $i > 1 {
+    @if $i >= 1 {
       @extend %section;
       @extend %anchor;
     }
