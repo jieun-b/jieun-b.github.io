@@ -1,0 +1,10 @@
+<html>
+    {% include head-blog.html %}
+    <body>
+        {% include navbar.html %}
+        <div class="page-content">
+            {{ content }}
+        </div>
+    {% include footer-blog.html %}
+    </body>
+</html>
