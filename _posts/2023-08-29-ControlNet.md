@@ -19,9 +19,9 @@ tag: [AI, Diffusion, ControlNet]
 
 ControlNet은 large image diffusion model을 제어하는 end-to-end 신경망 구조로, task-specific한 입력 조건을 학습하는 역할을 한다. ControlNet은 large diffusion model의 가중치들을 trainable copy와 locked copy로 복제한다. 
 
-locked copy는 수십억 개의 이미지로부터 학습한 네트워크 capability를 보존하며, trainable copy는 task-specific 데이터셋에서 조건부 컨트롤을 학습한다. trainable, locked 블록은 zero convolution이라 불리는 고유한 유형의 컨볼루션 레이어로 연결되는데, 컨볼루션 가중치들은 점진적으로 0에서부터 최적화된 파라미터로 학습에 따라 성장한다. 
+Locked copy는 수십억 개의 이미지로부터 학습한 네트워크 capability를 보존하며, trainable copy는 task-specific 데이터셋에서 조건부 컨트롤을 학습한다. trainable, locked 블록은 zero convolution이라 불리는 고유한 유형의 컨볼루션 레이어로 연결되는데, 컨볼루션 가중치들은 점진적으로 0에서부터 최적화된 파라미터로 학습에 따라 성장한다. 
 
-production-ready weight들이 보존되므로 학습은 서로 다른 규모의 데이터셋에서 강건하게 이루어진다. 또한 zero convolution은 deep feature에 새로운 노이즈를 추가하지 않기 때문에 새로운 레이어를 처음부터 훈련하는 것에 비해 학습 속도가 빠르다.
+Production-ready weight들이 보존되므로 학습은 서로 다른 규모의 데이터셋에서 강건하게 이루어진다. 또한 zero convolution은 deep feature에 새로운 노이즈를 추가하지 않기 때문에 새로운 레이어를 처음부터 훈련하는 것에 비해 학습 속도가 빠르다.
 
 # Related Work
 
