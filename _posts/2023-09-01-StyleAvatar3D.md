@@ -1,3 +1,12 @@
+---
+title: "[논문 리뷰] StyleAvatar3D: Leveraging Image-Text Diffusion Models for High-Fidelity 3D Avatar Generation"
+
+categories:
+  - 논문 리뷰
+
+date: 2023-09-01 
+tag: [AI, Diffusion, 3D GAN, StyleAvatar3D]
+---
 # StyleAvatar3D: Leveraging Image-Text Diffusion Models for High-Fidelity 3D Avatar Generation
 
 > arXiv 2023. [[Paper](https://arxiv.org/abs/2305.19012)] [[Github](https://github.com/icoz69/StyleAvatar3D)]
