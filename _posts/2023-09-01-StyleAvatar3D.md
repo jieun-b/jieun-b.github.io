@@ -28,7 +28,7 @@ StyleAvatar3D는 포즈 가이드가 있는 다중 뷰 이미지를 생성하기
 
 ![img2.png](/assets/img/2023-09-01/img2.png)
 
-ControlNet $$\cal{C}_\theta$$ 은 pose image $I_\mathrm{p}$와 text prompt $T$를 입력으로 받아 스타일화된 이미지 $$I_{s}:I_{s}=\cal{C}_\theta (\mathit{I}_\mathrm{p},T)$$ 를 생성한다. 텍스트 프롬프트 $T$는 positive 프롬프트와 negative 프롬프트로 구성되어있다: $$T=(T_\mathrm{pos},T_\mathrm{neg})$$. 두 프롬프트는 각각 이미지에서 원하는 특성과 원하지 않는 특성으로 설명될 수 있다.
+ControlNet $$\cal{C}_\theta$$ 은 pose image $I_\mathrm{p}$와 text prompt $T$를 입력으로 받아 스타일화된 이미지 $$I_{s}:I_{s}=\cal{C}_\theta (\mathit{I}_\mathrm{p},\mathit{T})$$ 를 생성한다. 텍스트 프롬프트 $T$는 positive 프롬프트와 negative 프롬프트로 구성되어있다: $$T=(T_\mathrm{pos},T_\mathrm{neg})$$. 두 프롬프트는 각각 이미지에서 원하는 특성과 원하지 않는 특성으로 설명될 수 있다.
 
 가이드를 위한 포즈 이미지는 엔진의 기존 3D 아바타 모델을 사용한다. 아바타 모델에서 포즈 이미지를 추출하기 위해 아바타 머리 중심을 월드 좌표계의 원점으로 설정하고, 카메라가 이 원점을 향하도록 한다. 아바타 정면의 pitch, yaw 각도는 0도로 가정한다. 카메라의 위치는 -180도에서 180도의 yaw 범위와 -30도에서 30도의 pitch 범위 내에서 랜덤하게 샘플링 된다. 다시 말해, 카메라는 원점을 기준으로 미리 결정된 반지름 만큼의 거리에서, 제한된 각도 범위를 가지고 회전하여 다중 뷰 이미지를 생성해낸다.
 
