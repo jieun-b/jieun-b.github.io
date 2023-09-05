@@ -106,7 +106,7 @@ FaceShifter에서 사용한 attributes loss 대신 cycle consistency loss를 사
 
 Adversarial loss $\cal{L}_{adv}$는 Gau-GAN에서의 것을 사용한다. 최종적인 loss $\cal{L}$은 다음과 같다. 
 
-![img14.png](/assets/img/2023-09-04/img14.png)
+![img14.png](/assets/img/2023-09-04/img14.png){: width="50%"",height="50%""}
 
 # Experiment
 
