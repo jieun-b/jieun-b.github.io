@@ -22,7 +22,7 @@ title: 대학원 일기 # the main title
 
 sidebar_title: 지은
 
-tagline: 안녕하세요 대학원생입니다:bow: # it will display as the sub-title
+tagline: 안녕하세요 대학원생입니다 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   논문 읽고 리뷰하는 블로그
@@ -123,10 +123,6 @@ lsi                 : false
 excerpt_separator   : "\n\n"
 incremental         : false
 
-# Plugins (previously gems:)
-plugins:
-	- jemoji
- 
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
