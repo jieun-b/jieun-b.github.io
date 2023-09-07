@@ -123,6 +123,10 @@ lsi                 : false
 excerpt_separator   : "\n\n"
 incremental         : false
 
+# Plugins (previously gems:)
+plugins:
+	- jemoji
+ 
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
