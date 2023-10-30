@@ -46,7 +46,7 @@ ControlNet은 사전 학습된 human pose estimator에 의해 제공되는 pseud
 
 StableDiffusion은 유사한 얼굴 특성을 가진 편향된 아바타를 만드는 경향이 있다. 이러한 문제는 생성된 데이터셋의 다양성을 제한시킬 수 있는데 이를 해결하기 위해 수동으로 attribute-related prompt $T_\mathrm{att}$를 도입한다. 이 프롬프트는 헤어스타일, 얼굴 표정, 눈 모양과 같은 측면을 포함하며, 20개의 다른 얼굴 속성을 가진다. 생성 과정에서는 5개의 얼굴 속성을 랜덤하게 샘플링하고 각 속성에 대해 하나의 카테고리를 선택한다. 
 
-결과적으로 positive prompt는 style-related prompt $T_\mathrm{style}$, view-related prompt $T_\mathrm{view}$, attribute-related prompt $T_\mathrm{att}$로 구성된다. *실험에서 아바타의 스타일을 텍스트로 정의하는 대신 LoRA를 기반으로 몇 가지 이미지 예에서 모델이 스타일을 배울 수 있음을 보여준다.
+결과적으로 positive prompt는 style-related prompt $T_\mathrm{style}$, view-related prompt $T_\mathrm{view}$, attribute-related prompt $T_\mathrm{att}$로 구성된다.
 
 ## Addressing the Issue of Image-Pose Misalignment
 

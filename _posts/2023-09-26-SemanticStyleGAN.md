@@ -9,14 +9,14 @@ tag: [StyleGAN, SemanticStyleGAN, Image synthesis, Editing]
 ---
 # SemanticStyleGAN: Learning Compositional Generative Priors for Controllable Image Synthesis and Editing
 
-> CVPR 2022. [[Paper](https://arxiv.org/abs/2112.02236)][[Github](https://github.com/seasonSH/SemanticStyleGAN)]
+> CVPR 2022. [[Paper](https://arxiv.org/abs/2112.02236)] [[Github](https://github.com/seasonSH/SemanticStyleGAN)]
 > 
 
 ![img1.png](/assets/img/2023-09-26/img1.png)
 
 # Introduction
 
-SemanticStyleGAN은 local semantic part를 학습해 컨트롤 가능한 이미지 합성을 수행하도록 한다. Semantic segmentation mask로 정의된 semantic part를 기반으로 모델의 latent code를 factorization 하는데, 각각의 semantic part는 해당하는 local latent code와 함께 개별적으로 모듈레이션 된다. 이미지는 local feature map을 조합하여 합성된다. Local latent code는 semantic part의 structure와 texture를 둘 다 컨트롤 할 수 있다.
+SemanticStyleGAN은 local semantic part를 학습해 컨트롤 가능한 이미지 합성을 수행하도록 한다. Semantic part는 semantic segmentation mask에 의해 정의되며, semantic part를 기반으로 모델의 latent code를 factorization 한다. 각각의 semantic part는 local latent code로 모듈레이션 되고, 이미지는 local feature map을 조합하여 합성된다. Local latent code는 다른 방법들과 달리 semantic part의 structure와 texture를 둘 다 컨트롤 할 수 있다.
 
 ![img2.png](/assets/img/2023-09-26/img2.png)
 
@@ -46,11 +46,11 @@ Local generator는 modulated MLP를 사용한다. 이는 합성된 출력에 대
 
 ![img6.png](/assets/img/2023-09-26/img6.png){: width="60%" height="60%"}
 
-계산 비용을 줄이기 위해 입력 Fourier feature map과 출력은 최종 출력 이미지보다 작은 $H^{c}×W^{c}$로 크기를 줄인다. 학습 중에 각각의 local generator에서는 독립적으로  $$\textbf{w}^{base},\textbf{w}^{k}_{s},\textbf{w}^{k}_{t}$$ 사이 스타일 믹싱을 수행한다. 이를 통해 서로 다른 local 파트와 shape, texture가 공동으로 잘 합성되도록 한다. 한편, Pseudo-depth map의 경우 실제 depth map은 아니지만 z-buffering process를 모방하는 구성 전략으로 사용되기 때문에 depth라고 불린다.
+계산 비용을 줄이기 위해 입력 Fourier feature map과 출력은 최종 출력 이미지보다 작은 $H^{c}×W^{c}$로 크기를 줄인다. 학습 중에 각각의 local generator에서는 독립적으로  $$\textbf{w}^{base},\textbf{w}^{k}_{s},\textbf{w}^{k}_{t}$$ 사이 스타일 믹싱을 수행한다. 이를 통해 서로 다른 local 파트와 shape, texture가 공동으로 잘 합성되도록 한다. 한편, Pseudo-depth map의 경우 실제 depth map은 아니지만 z-buffering process를 모방하는 composition 전략으로 사용되기 때문에 depth라고 불린다.
 
 ### Fusion
 
-Fusion 단계에서는 먼저 pseudo-depth map으로부터 coarse segmentation mask $\textbf{m}$을 생성한다. Pseudo-depth map은 소프트맥스 함수에 사용되어 마스크를 생성한다. 
+Fusion 단계에서는 먼저 pseudo-depth map으로부터 coarse segmentation mask $\textbf{m}$을 생성한다. 이는 소프트맥스 함수를 통해 수행된다.
 
 ![img7.png](/assets/img/2023-09-26/img7.png){: width="60%" height="60%"}
 
