@@ -5,9 +5,9 @@ categories:
   - 논문 리뷰
 
 date: 2023-08-29 
-tag: [AI, Diffusion, ControlNet]
+tag: [AI, Diffusion]
 ---
-# Adding Conditional Control to Text-to-Image Diffusion Models
+# Adding Conditional Control to Text-to-Image Diffusion Models (ControlNet)
 
 > arXiv 2023. [[Paper](https://arxiv.org/abs/2302.05543)] [[Github](https://github.com/lllyasviel/ControlNet)]
 > 

@@ -5,7 +5,7 @@ categories:
   - 논문 리뷰
 
 date: 2023-09-01 
-tag: [AI, Diffusion, 3D GAN, StyleAvatar3D]
+tag: [AI, Diffusion, 3D Generation, Avatar]
 ---
 # StyleAvatar3D: Leveraging Image-Text Diffusion Models for High-Fidelity 3D Avatar Generation
 

@@ -18,14 +18,14 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 대학원 일기 # the main title
+title: Insight Notes # the main title
 
 sidebar_title: 지은
 
-tagline: 안녕하세요 대학원생입니다🙇 # it will display as the sub-title
+tagline: 논문을 읽고 정리하기 위한 블로그입니다🔥 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  논문 읽고 리뷰하는 블로그
+  논문 리뷰를 위한 블로그
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://jieun-b.github.io"

@@ -5,7 +5,7 @@ categories:
   - 논문 리뷰
 
 date: 2023-09-22 
-tag: [Neural rendering, One-shot neural avatars, MegaPortraits]
+tag: [AI, GAN, Reenactment]
 ---
 # MegaPortraits: One-shot Megapixel Neural Head Avatars
 

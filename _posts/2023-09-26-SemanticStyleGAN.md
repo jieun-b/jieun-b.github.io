@@ -5,7 +5,7 @@ categories:
   - 논문 리뷰
 
 date: 2023-09-26
-tag: [StyleGAN, SemanticStyleGAN, Image synthesis, Editing]
+tag: [AI, GAN, Image synthesis, Editing]
 ---
 # SemanticStyleGAN: Learning Compositional Generative Priors for Controllable Image Synthesis and Editing
 

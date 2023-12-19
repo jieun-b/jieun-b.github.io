@@ -5,7 +5,7 @@ categories:
   - 논문 리뷰
 
 date: 2023-09-04 
-tag: [Face-Swapping, BlendFace]
+tag: [AI, Face-Swapping, Face Recognition]
 ---
 # BlendFace: Re-designing Identity Encoders for Face-Swapping
 
