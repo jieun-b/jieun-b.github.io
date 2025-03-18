@@ -96,17 +96,10 @@ init_files() {
   _sedi "/^assets\/js\/dist/d" .gitignore
 }
 
-# commit() {
-#   git add -A
-#   git commit -m "chore: initialize the environment" -q
-#   echo -e "\n> Initialization successful!\n"
-# }
-
 main() {
   check_env
   reset_latest
   init_files
-  # commit
 }
 
 while (($#)); do
