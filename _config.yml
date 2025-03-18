@@ -122,7 +122,7 @@ highlighter         : rouge
 lsi                 : false
 excerpt_separator   : "\n\n"
 incremental         : false
-
+baseurl: "/old"
 # ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
