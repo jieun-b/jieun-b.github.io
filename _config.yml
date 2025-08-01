@@ -14,7 +14,9 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Jieun’s Dev Log # the main title
+title: J.dev # the main title
+
+sidebar_title: Jieun.B
 
 tagline: Thoughts in progress # it will display as the subtitle
 
