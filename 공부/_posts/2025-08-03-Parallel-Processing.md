@@ -1,5 +1,9 @@
-# Python 병렬 처리 정리
-
+---
+title: "Python 병렬 처리 정리"
+date: 2025-08-03 00:00:00 +0900
+layout: post
+tags: [ParallelProcessing, Multiprocessing, Multithreading]
+---
 # 1. 병렬 처리란?
 
 > 여러 작업을 동시에 실행하여 전체 처리 시간을 줄이는 기법
