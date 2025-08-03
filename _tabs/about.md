@@ -7,6 +7,7 @@ order: 4
 ## 👋 About Me
 
 Hi! I'm Jieun, a deep learning developer.
+
 This blog will serve as a record of my studies.
 
 ## 🧠 Interests
