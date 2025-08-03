@@ -4,5 +4,16 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+## 👋 About Me
+
+Hi! I'm Jieun, a deep learning developer.
+This blog will serve as a record of my studies.
+
+## 🧠 Interests
+
+- Computer Vision & Graphics  
+- Image / Video Generation  
+- 3D Reconstruction  
+- Diffusion Models
+
+Thanks for visiting 💖
