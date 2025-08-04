@@ -1,6 +1,6 @@
 ---
 title: "PyTorch DataLoader 이해"
-date: 2025-08-01 00:00:00 +0900
+date: 2025-08-01 02:00:00 +0900
 layout: post
 tags: [PyTorch, DataLoader, Dataset, Sampler]
 ---
