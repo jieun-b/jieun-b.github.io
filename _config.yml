@@ -18,10 +18,10 @@ title: J.dev # the main title
 
 sidebar_title: Jieun.B
 
-tagline: Thoughts in progress # it will display as the subtitle
+tagline: AI Research · Vision · Generative Models # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A development log I write to organize my thoughts.
+  Notes on computer vision, diffusion models, and 3D/portrait animation research.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -44,7 +44,7 @@ social:
     - https://github.com/jieun-b # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/%EC%A7%80%EC%9D%80-%EB%B0%B0-047a7a252 
 
 # Site Verification Settings
 webmaster_verifications:
@@ -111,14 +111,15 @@ toc: true
 
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
-  provider: # [disqus | utterances | giscus]
+  provider: utterances # [disqus | utterances | giscus]
   # The provider options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
+    repo: jieun-b/jieun-b.github.io # <gh-username>/<repo>
+    issue_term: pathname # < url | pathname | title | ...>
+    label: comment
   # Giscus options › https://giscus.app
   giscus:
     repo: # <gh-username>/<repo>
