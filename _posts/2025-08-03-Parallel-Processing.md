@@ -1,7 +1,8 @@
----
+﻿---
 title: "Python 병렬 처리"
 date: 2025-08-03 00:00:00 +0900
 layout: post
+categories: [공부, Python]
 tags: [ParallelProcessing, Multiprocessing, Multithreading]
 ---
 # 1. 병렬 처리란?
