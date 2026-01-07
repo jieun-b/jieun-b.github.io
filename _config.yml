@@ -18,9 +18,10 @@ title: J.dev # the main title
 
 sidebar_title: Jieun.B
 
-tagline: AI Research · Vision · Generative Models # it will display as the subtitle
+tagline: Thoughts in Progress # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
+  AI Research · Vision · Generative Models
   Notes on computer vision, diffusion models, and 3D/portrait animation research.
 
 # Fill in the protocol & hostname for your site.
