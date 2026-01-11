@@ -4,7 +4,9 @@ date: 2025-08-08 00:00:00 +0900
 layout: post
 categories: [공부, Deep Learning]
 tags: [DeepSpeed, ZeRO]
-image: /assets/img/posts/2025/08/deepspeed-zero/deepspeed-overview.gif
+image:
+  path: /assets/img/posts/2025/08/deepspeed-zero/deepspeed-overview.gif
+  hidden: true
 ---
 # 1. DeepSpeed란?
 
