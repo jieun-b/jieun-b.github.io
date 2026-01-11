@@ -1,4 +1,4 @@
-﻿---
+---
 title: "DeepSpeed와 ZeRO"
 date: 2025-08-08 00:00:00 +0900
 layout: post
@@ -7,7 +7,7 @@ tags: [DeepSpeed, ZeRO]
 ---
 # 1. DeepSpeed란?
 
-![그림1.gif](/assets/img/posts/2025/08/Deepspeed-ZeRO/그림1.gif)
+![deepspeed-overview](/assets/img/posts/2025/08/deepspeed-zero/deepspeed-overview.gif)
 
 DeepSpeed는 Microsoft에서 개발한 **PyTorch 기반 대규모 분산 학습 최적화 라이브러리**로, 수십억에서 수조 개의 파라미터를 갖는 초대형 모델을 단일 노드의 다중 GPU 또는 다중 노드 환경에서도 효율적으로 학습할 수 있도록 설계되어 있다.
 
